@@ -162,13 +162,72 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
-section {
+main section {
   width: 60%;
   padding: 15px;
   margin: 15px;
   background-color: #1B2631;
   border-radius: 5px;
+}
+main .Cabecera {
+  color: white;
+  padding: 5px;
+}
+main .Cuerpo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .Cuerpo .Cuerpo__subBox {
+  background-color: #F1C40F;
+  width: 920px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  /*Cartas de SeccionProductos*/
+}
+main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card {
+  display: flexbox;
+  width: 180px;
+  height: 240px;
+  box-shadow: 0 0 1px black;
+  background-color: white;
+  /*Efectos de SeccionProductos*/
+}
+main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card a {
+  text-decoration: none;
+}
+main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card .Cuerpo__subBox--cardImg {
+  background-color: white;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card .Cuerpo__subBox--cardImg img {
+  width: 100%;
+  height: 80%;
+}
+main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card .Cuerpo__subBox--cardText {
+  background-color: white;
+  height: 20%;
+  width: 100%;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card .Cuerpo__subBox--cardText .Cuerpo__subBox--cardFont {
+  font-weight: 600;
+  font-size: 17px;
+}
+main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card .Cuerpo__subBox--cardText .Cuerpo__subBox--cardFont p {
+  color: #212F3D;
+  text-align: center;
+}
+main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card:hover {
+  box-shadow: 0 0 5px 5px orange;
+  transition: all 0.2s;
 }
 
 html {
@@ -177,78 +236,6 @@ html {
 
 [id] {
   scroll-margin-top: 300px;
-}
-
-/*Seccion productos*/
-.Cabecera {
-  color: white;
-  padding: 5px;
-}
-
-.Cuerpo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Cuerpo__subBox {
-  background-color: #F1C40F;
-  width: 920px;
-  display: grid;
-  gap: 5px;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-}
-
-/*Cartas de SeccionProductos*/
-.Cuerpo__subBox--card {
-  display: flexbox;
-  width: 180px;
-  height: 240px;
-  box-shadow: 0 0 1px black;
-  background-color: white;
-}
-
-.Cuerpo__subBox--card a {
-  text-decoration: none;
-}
-
-.Cuerpo__subBox--cardImg img {
-  width: 100%;
-  height: 80%;
-}
-
-.Cuerpo__subBox--cardImg {
-  background-color: white;
-  height: 70%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Cuerpo__subBox--cardText {
-  background-color: white;
-  height: 20%;
-  width: 100%;
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-}
-
-.Cuerpo__subBox--cardFont {
-  font-weight: 600;
-  font-size: 17px;
-}
-
-.Cuerpo__subBox--cardFont p {
-  color: #212F3D;
-  text-align: center;
-}
-
-/*Efectos de SeccionProductos*/
-.Cuerpo__subBox--card:hover {
-  box-shadow: 0 0 5px 5px orange;
-  transition: all 0.2s;
 }
 
 /*Bloque Pie de pagina*/
@@ -260,14 +247,12 @@ footer {
   justify-content: center;
   overflow: hidden;
 }
-
 footer a {
   text-decoration: none;
   color: #ABB2B9;
   margin: 10px;
+  /*Efectos pie de pagina*/
 }
-
-/*Efectos pie de pagina*/
 footer a:hover {
   color: orange;
   transition: all 0.3s;

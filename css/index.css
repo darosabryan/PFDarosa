@@ -323,14 +323,12 @@ footer {
   justify-content: center;
   overflow: hidden;
 }
-
 footer a {
   text-decoration: none;
   color: #ABB2B9;
   margin: 10px;
+  /*Efectos pie de pagina*/
 }
-
-/*Efectos pie de pagina*/
 footer a:hover {
   color: orange;
   transition: all 0.3s;
