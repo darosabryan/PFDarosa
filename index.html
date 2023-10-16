@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Store</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="shortcut icon" href="img/favIcon.png">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+
+            <!--Inicio-Caja Logo-->
+            <div class="cabecera__logo">
+                
+                    <div class="cabecera__logo--img"><a href="index.html"><img src="img/favIcon.png" alt="Logo"/></a></div>
+                    <div class="cabecera__logo--text"><a href="index.html"><h1>Electronic Store</h1></a></div>
+                    
+            
+            </div>
+            <!--Fin-Caja Logo-->
+
+
+            <!--Inicio-Barra de busqueda-->
+            <div class="cabecera__caja cabecera__buscador">
+                <div class="cabecera__buscador--input"><input type="text" placeholder="buscar.."></div>
+                <div class="cabecera__buscador--button"><button>
+                    <a href="search.html"><img src="img/lupa.png" alt="lupa"></a>    
+                </div>
+            </div>
+            <!--Fin-Barra de busqueda-->
+
+            <!--Inicio-Caja usuario-->          
+            <div class="cabecera__caja cabecera__usuario">
+                        
+                <div class="cabecera__usuario--img"><img src="img/user.png" alt="Usuario"/></div>
+                <div class="cabecera__usuario--text">
+                    <a href="signIn.html">Crear Cuenta</a>
+                    <a href="login.html">Ingresar</a>
+                                       
+                </div>    
+
+            </div>
+        
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><img src="img/ubi.png" alt="Ubicación"/></li>
+                <li>
+                    <a href="#">Ubicación</a>               
+                </li>
+                <li>
+                    <a href="#">Categorías</a>
+    
+                    <ul class="menu__subMenu">
+                       <li><a href="search.html">Celulares</a></li>
+                       <li><a href="search.html">Computación</a></li>
+                       <li><a href="search.html">Cámaras</a></li>
+                       <li><a href="search.html">Electrónica</a></li>
+                       <li><a href="search.html">Audio&Video</a></li>
+                       <li><a href="search.html">Consolas</a></li> 
+                    </ul>
+                
+                </li>                     
+                <li class="menu_imgChevronDown"><img src="img/chevronDown.png" alt="chevronDown"></li>                               
+                <li><a href="search.html">Ofertas</a></li>
+                <li><a href="clientService.html">Servicio al cliente</a></li>
+                    
+            </ul>
+        </nav> 
+
+    </header>
+
+    <main>
+        <Section class="categorias">
+            
+            <!--Inicio-Seccion de categorias-->
+               
+                <!--Inicio-Cabeceras categorias-->
+                <div class="categorias__cabecera">
+                    <h3>Categorías</h3>
+
+                </div>
+                <!--Fin-Cabeceras categorias-->
+                
+                <!--Inicio-Cuerpo categorias-->
+                <div class="categorias__cuerpo">
+                    <div class="Boxsubcategorias__cuerpo"> 
+                    <!--Carta Celulares-->
+                        <div class="categorias__cuerpo--card">
+                            <a href="search.html">
+                                <div class="categorias__cuerpo--cardImg">
+                                    <img src="img/phone.png" alt="phone">
+                                </div>
+                                <div class="categorias__cuerpo--cardText">
+                                    <p>Celulares</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--Carta Computacion-->
+                        <div class="categorias__cuerpo--card">
+                            <a href="search.html">
+                                <div class="categorias__cuerpo--cardImg">
+                                    <img src="img/ordenador.png" alt="ordenador">
+                                </div>
+                                <div class="categorias__cuerpo--cardText">
+                                    <p>Computación</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--Carta Camara-->
+                        <div class="categorias__cuerpo--card">
+                            <a href="search.html">
+                                <div class="categorias__cuerpo--cardImg">
+                                    <img src="img/camara.png" alt="camara">
+                                </div>
+                                <div class="categorias__cuerpo--cardText">
+                                    <p>Cámaras</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--Carta Electronica-->
+                        <div class="categorias__cuerpo--card">
+                            <a href="search.html">
+                                <div class="categorias__cuerpo--cardImg">
+                                    <img src="img/upc.png" alt="upc">
+                                </div>
+                                <div class="categorias__cuerpo--cardText">
+                                    <p>Electrónica</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--Carta Audio&Video-->
+                        <div class="categorias__cuerpo--card">
+                            <a href="search.html">
+                                <div class="categorias__cuerpo--cardImg">
+                                    <img src="img/multimedia.png" alt="multimedia">
+                                </div>
+                                <div class="categorias__cuerpo--cardText">
+                                    <p>Audio&Video</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--Carta Consolas-->
+                        <div class="categorias__cuerpo--card">
+                            <a href="search.html">
+                                <div class="categorias__cuerpo--cardImg">
+                                    <img src="img/consola.png" alt="consola">
+                                </div>
+                                <div class="categorias__cuerpo--cardText">
+                                    <p>Consolas</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>   
+                </div>
+
+                <!--Fin-Cuerpo categorias-->
+                
+            
+        </Section>
+        <!--Fin-Seccion de categorias-->
+        
+        <!--Seccion de Productos-->
+        <section class="productos">
+            <div class="productos__cabecera">
+                <h3>Populares</h3>
+
+            </div>
+            <div class="productos__cuerpo">
+                <div class="Boxsubproductos__cuerpo"> 
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html"></a>
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img/productos/pantallaCurva.webp" alt="pantallaCurva">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Monitor gamer curvo Kolke KES-461 led 23.6"</p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 1500</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html">
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img//productos/camaraLogi.webp" alt="CamaraLogi">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Cámara web Logitech C922 Pro Full HD 30FPS</p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 100</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html">
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img/productos/ImpresoraEpson.webp" alt="Impresora">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Epson EcoTank L3250 con wifi</p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 273</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html">
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img/productos/ParlanteJBL.webp" alt="ParlanteJBL">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Parlante JBL Go 3 portátil con bluetooth</p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 40</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html">
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img/productos/SonyPlayStation5.webp" alt="SonyPlayStation5">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Sony PlayStation 5 825GB Digital Edition</p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 769</p>
+                            </div>
+                        </a>
+                    </div>
+            
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html">
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img/productos/AppleiPhone14.webp" alt="iPhone14">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Apple iPhone 14 (128 GB) - Medianoche</p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 1.095</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html">
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img/productos/DiscoDuroExternoToshiba.webp" alt="DiscoDuro">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Disco duro externo Toshiba Canvio Basics HDTB410XK3AA 1TB </p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 70</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html">
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img/productos/PlacaVideo.webp" alt="TarjetaVideo">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Tarjeta de video Nvidia Gigabyte GeForce RTX 30 Series RTX 3050 - 8GB</p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 427</p>                            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html">
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img/productos/MicrófonoHyperX.webp" alt="MicrofonoHyperx">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Micrófono HyperX QuadCast condensador multipatrón</p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 167</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="productos__cuerpo--card">
+                        <a href="productView.html">
+                            <div class="productos__cuerpo--cardImg">
+                                <img src="img/productos/ProyectorGadnic.webp" alt="ProyectorGadnic">
+                            </div>
+                            <div class="productos__cuerpo--cardText">
+                                <p>Proyector Gadnic Spectacular 1200 Lúmenes Hdmi Usb Av Full Hd</p>
+                                <p class="productos__cuerpo--cardTextFont">U$S 120</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>    
+            </div>
+        
+    </section>
+    
+       <!--Info de la pagina-->
+    <section class="aboutus">
+        <div class="aboutus__titulo">
+            <h4>Acerca de nosotros</h4>
+        </div>
+        <div class="aboutus__texto">       
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit ante, nunc ullamcorper dignissim est sem lobortis eget enim pulvinar sodales, fames sociosqu mi fringilla nec eros libero iaculis. Laoreet at montes sagittis iaculis a ligula luctus, condimentum lectus magna felis scelerisque augue vel cursus, nisl pellentesque tristique tempus dapibus diam. Magnis class tincidunt pharetra iaculis leo potenti volutpat id, dis placerat viverra cras facilisis vitae mi, tempor duis lectus rhoncus est lacinia varius.</p>
+
+            <p>Velit posuere ante diam taciti per vivamus, ut aptent sociis phasellus sagittis etiam, magna quis faucibus dictum mauris. Dui ac nam vel vulputate dis primis lacus id, malesuada nunc praesent suspendisse purus faucibus fusce, accumsan aenean enim turpis vestibulum arcu facilisis. Nisi facilisi curabitur orci nunc praesent quam nisl interdum platea at dictumst cum pharetra nascetur, torquent leo ligula sed primis ridiculus faucibus vitae turpis tellus ultricies neque.</p>
+        </div>                 
+
+    </section>   
+
+    </main>
+
+   <!--Pie de pagina-->
+   <footer>
+    <a href="#home">Inicio</a>
+    <a href="aboutUs.html">Nosotros</a>
+   </footer>
+
+</body>
+</html>

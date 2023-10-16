@@ -1,0 +1,498 @@
+*{ padding: 0;
+   margin: 0; 
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:144px auto 154px;
+    
+}
+
+/*Bloque cabecera*/
+header{
+    background-color: #17202A; 
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    top:0;
+
+}
+
+/*Contenedor de cabecera__logo; cabecera__buscador; cabecera__usaurio*/
+.cabecera{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 100%;
+
+}
+
+/*codigo que comparten las 3 cajas de la cabecera, mencionados anteriormente*/
+.cabecera__caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cabecera__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Logo de la cabecera*/
+.cabecera__logo a{
+    text-decoration: none;
+
+}
+
+.cabecera__logo--text h1{
+    color:white;
+    font-size: 20px;
+
+}
+
+.cabecera__logo--img{
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.cabecera__logo--text{
+    height: fit-content;
+    width: fit-content;
+
+}
+
+/*Buscador de la cabecera*/
+.cabecera__buscador{
+    display: flex;
+
+}
+
+.cabecera__buscador--input{
+    height: 40px;
+    width: 90%;
+
+}
+
+.cabecera__buscador--button{
+    height: 40px;
+    width: 40px;
+
+}
+
+
+.cabecera__buscador--input input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    border:0;
+    padding: 0 5px;
+    outline: none;
+
+}
+
+.cabecera__buscador--button button{
+    width: 100%;
+    height: 100%;
+    background-color:#5DADE2 ;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+
+}
+
+/*Efectos del buscador*/
+.cabecera__buscador button:hover{
+    background-color: #2874A6;
+
+}
+
+
+/*Login&Signin*/
+.cabecera__usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cabecera__usuario--img{
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.cabecera__usuario--text{
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.cabecera__usuario--text {
+    display: inline-block;        
+
+}
+
+.cabecera__usuario--text a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+
+}
+/*Efectos de Login&Signin*/
+.cabecera__usuario--text a:hover{
+    color:orange;
+    transition: all .3s;
+
+}
+
+
+/*Menu de navegacion*/
+
+.menu{	
+    background-color: #F1C40F;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+} 
+
+
+.menu li{
+    display: inline-block;
+    margin: 4px;
+        
+}
+
+.menu li a{
+    text-decoration:none;
+    color:white;
+    display: block;
+    
+}
+
+/*SubMenu de navegacion*/
+.menu__subMenu{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: none;
+    list-style: none;
+    border-radius: 10px;
+    background-color: #283747;
+    padding: 15px;
+        
+}
+
+.menu__subMenu li{ 
+    display: block;
+
+}
+
+/*Efectos del menu*/
+.menu li:hover .menu__subMenu{
+    display: block;
+
+}
+
+.menu li a:hover{
+    color:#566573;
+    transition: all .3s;
+
+}
+.menu__subMenu li a:hover{
+    color: orange;
+
+} 
+
+/*Bloque Cuerpo*/
+main{
+    background-color: #34495E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+section{
+    width: 60%;
+    padding: 15px;
+
+}
+
+/*Seccion categoria*/
+.categorias{
+    box-shadow: 0 0 3px white;
+    border-radius: 5px;
+    background-color: #1B2631 ;
+    margin: 15px;
+    overflow: hidden;
+
+}
+
+
+
+.categorias h3{
+    color: white;
+
+}
+
+
+.categorias__cabecera{
+    padding: 5px;
+
+}
+
+.categorias__cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Boxsubcategorias__cuerpo{
+    width: 625px;
+    display: grid;
+    gap:5px;
+    grid-template-columns: repeat(auto-fill,minmax(6rem,1fr));
+
+}
+
+/*Cartas de SeccionCategoria*/
+.categorias__cuerpo--card{
+    display: flexbox;
+    width: 100px;
+    height: 120px;
+    box-shadow: 0 0 1px black;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.categorias__cuerpo--card a{
+    text-decoration: none;
+
+}
+
+.categorias__cuerpo--cardImg{
+    background-color: white;
+    height: 70%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.categorias__cuerpo--cardText{
+    background-color: white;
+    height: 30%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+.categorias__cuerpo--cardText p{
+    color: #18222D;
+    text-align: center;
+
+}
+
+/*Efectos de categoria*/
+.categorias__cuerpo--card:hover{
+    box-shadow:  5px 5px 5px 5px orange;
+    transition: all .3s;
+
+}
+
+
+/*Seccion productos*/
+.productos{
+    margin: 15px;
+    overflow: hidden;
+
+}
+
+.productos__cabecera{
+    color: white;
+    padding: 5px;
+
+}
+
+.productos__cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Boxsubproductos__cuerpo{
+    background-color: #F1C40F;
+    width: 920px;
+    display: grid;
+    gap:5px;
+    grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
+    
+}
+
+/*Cartas de SeccionProductos*/
+.productos__cuerpo--card{
+    display:flexbox;
+    width: 180px;
+    height: 240px;
+    box-shadow: 0 0 1px black;
+    background-color: white;
+
+}
+
+.productos__cuerpo a{
+    text-decoration: none;
+
+}
+
+.productos__cuerpo--cardImg img{
+    width: 100%;
+    height: 80%;
+
+}
+
+.productos__cuerpo--cardImg{
+    background-color: white;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.productos__cuerpo--cardText{
+    background-color: white;
+    height: 20%;
+    width: 100%;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.productos__cuerpo--cardTextFont{
+    font-weight:600;
+    font-size: 17px;
+
+}
+
+.productos__cuerpo--cardText p{
+    color: #212F3D;
+    text-align: center;
+
+}
+
+/*Efectos de SeccionProductos*/
+.productos__cuerpo--card:hover{
+    box-shadow: 0 0 5px 5px orange;
+    transition: all .2s;
+
+}
+
+
+/*Seccion Acerca de nosotros*/
+.aboutus{
+    text-align: center;
+    margin: 15px;
+    overflow: hidden;
+	padding:50px;
+    color: white;
+
+} 
+
+.aboutus__titulo h4{
+    font-size: 32px;
+    padding: 15px;
+
+}
+
+.aboutus__titulo{
+    overflow: hidden;
+
+}
+
+.aboutus__text p{
+    margin: 20px;
+
+}
+
+
+/*Bloque Pie de pagina*/
+footer{
+    background-color: #17202A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: #ABB2B9;
+    margin: 10px;
+
+}
+
+/*Efectos pie de pagina*/
+footer a:hover{
+    color:orange;
+    transition: all .3s;
+
+}
+
+    /*Media queries*/ 
+     @media(max-width: 480px){  
+        /*Ocultar Logo*/
+        .cabecera__logo--text{
+            display: none;
+
+        }
+
+        /*Ocultar usuario*/
+        .cabecera__usuario--text{
+            display: none;
+
+        }
+
+        .cabecera{
+            grid-template-columns: 1fr 3fr 1fr;
+
+        }
+
+        .menu_imgChevronDown img{
+            display: none;
+
+        }
+    }
+
+
+
+    
+
+
+    
+
+
+
