@@ -1,0 +1,190 @@
+
+ /*Bloque cabecera*/
+ header{
+    background-color: #17202A; 
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    top:0;
+
+    /*Contenedor de cabecera__logo; cabecera__buscador; cabecera__usaurio*/
+
+    .cabecera{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 100%;
+
+        
+        /*Logo de la cabecera*/
+        .cabecera__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+            
+            }
+
+            
+            .cabecera__logo--text {
+                height: fit-content;
+                width: fit-content;    
+
+                h1{
+                    color:white;
+                    font-size: 20px;
+
+                }
+            }
+
+            .cabecera__logo--img{
+                height: fit-content;
+                width: fit-content;
+            
+            }
+
+            
+        }
+
+        
+        /*Buscador de la cabecera*/
+        .cabecera__buscador{
+            display: flex;
+
+            .cabecera__buscador--input {
+                height: 40px;
+                width: 90%;
+                input{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px 0 0 5px;
+                    border:0;
+                    padding: 0 5px;
+                    outline: none;
+                }
+            }
+
+            .cabecera__buscador--button {
+                height: 40px;
+                width: 40px;
+                button{
+                    width: 100%;
+                    height: 100%;
+                    background-color:#5DADE2 ;
+                    border: 0;
+                    border-radius: 0 5px 5px 0;
+                    color: white;
+                    cursor: pointer;
+
+                    /*Efectos del buscador*/
+                    &:hover{
+                        background-color: #2874A6;
+                    }
+                }
+
+            }
+        }
+
+        /*Login&Signin*/
+        .cabecera__usuario {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cabecera__usuario--img{
+                height: fit-content;
+                width: fit-content;
+            
+            }
+
+            .cabecera__usuario--text{
+                height: fit-content;
+                width: fit-content;
+                display: inline-block;  
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    margin: 5px;
+
+                    /*Efectos de Login&Signin*/
+                    &:hover{
+                        color:orange;
+                        transition: all .3s;
+                    
+                    }
+                
+                }
+            
+            }
+
+        }
+
+        /*codigo que comparten las 3 cajas de la cabecera, mencionados anteriormente*/
+        .cabecera__caja{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+    }
+
+    /*Menu de navegacion*/
+    .menu{	
+        background-color: #F1C40F;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        li{
+            display: inline-block;
+            margin: 4px;
+
+            a{
+                text-decoration:none;
+                color:white;
+                display: block;
+                
+            }
+                
+        }
+    } 
+
+    /*SubMenu de navegacion*/
+    .menu__subMenu{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        display: none;
+        list-style: none;
+        border-radius: 10px;
+        background-color: #283747;
+        padding: 15px;
+
+        li{ 
+            display: block;
+    
+        }
+            
+    }
+
+    /*Efectos del menu*/
+    .menu li:hover .menu__subMenu{
+        display: block;
+
+    }
+
+    .menu li a:hover{
+        color:#566573;
+        transition: all .3s;
+
+    }
+    .menu__subMenu li a:hover{
+        color: orange;
+
+    } 
+
+}

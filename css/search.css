@@ -1,282 +1,294 @@
 * {
-	margin: 0;
-	padding: 0;
+  padding: 0;
+  margin: 0;
 }
 
-@font-face {
-    font-family: 'SourceSansPro-Black';
-    src: url('src/SourceSansPro-Black.ttf');
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 144px auto 154px;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+/*Bloque cabecera*/
+header {
+  background-color: #17202A;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  /*Contenedor de cabecera__logo; cabecera__buscador; cabecera__usaurio*/
+  /*Menu de navegacion*/
+  /*SubMenu de navegacion*/
+  /*Efectos del menu*/
+}
+header .cabecera {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  /*Logo de la cabecera*/
+  /*Buscador de la cabecera*/
+  /*Login&Signin*/
+  /*codigo que comparten las 3 cajas de la cabecera, mencionados anteriormente*/
+}
+header .cabecera .cabecera__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .cabecera .cabecera__logo a {
+  text-decoration: none;
+}
+header .cabecera .cabecera__logo .cabecera__logo--text {
+  height: fit-content;
+  width: fit-content;
+}
+header .cabecera .cabecera__logo .cabecera__logo--text h1 {
+  color: white;
+  font-size: 20px;
+}
+header .cabecera .cabecera__logo .cabecera__logo--img {
+  height: fit-content;
+  width: fit-content;
+}
+header .cabecera .cabecera__buscador {
+  display: flex;
+}
+header .cabecera .cabecera__buscador .cabecera__buscador--input {
+  height: 40px;
+  width: 90%;
+}
+header .cabecera .cabecera__buscador .cabecera__buscador--input input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  padding: 0 5px;
+  outline: none;
+}
+header .cabecera .cabecera__buscador .cabecera__buscador--button {
+  height: 40px;
+  width: 40px;
+}
+header .cabecera .cabecera__buscador .cabecera__buscador--button button {
+  width: 100%;
+  height: 100%;
+  background-color: #5DADE2;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  cursor: pointer;
+  /*Efectos del buscador*/
+}
+header .cabecera .cabecera__buscador .cabecera__buscador--button button:hover {
+  background-color: #2874A6;
+}
+header .cabecera .cabecera__usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .cabecera .cabecera__usuario .cabecera__usuario--img {
+  height: fit-content;
+  width: fit-content;
+}
+header .cabecera .cabecera__usuario .cabecera__usuario--text {
+  height: fit-content;
+  width: fit-content;
+  display: inline-block;
+}
+header .cabecera .cabecera__usuario .cabecera__usuario--text a {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  /*Efectos de Login&Signin*/
+}
+header .cabecera .cabecera__usuario .cabecera__usuario--text a:hover {
+  color: orange;
+  transition: all 0.3s;
+}
+header .cabecera .cabecera__caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu {
+  background-color: #F1C40F;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+header .menu li {
+  display: inline-block;
+  margin: 4px;
+}
+header .menu li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+header .menu__subMenu {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: none;
+  list-style: none;
+  border-radius: 10px;
+  background-color: #283747;
+  padding: 15px;
+}
+header .menu__subMenu li {
+  display: block;
+}
+header .menu li:hover .menu__subMenu {
+  display: block;
+}
+header .menu li a:hover {
+  color: #566573;
+  transition: all 0.3s;
+}
+header .menu__subMenu li a:hover {
+  color: orange;
 }
 
-header{
-    background-color:#2C3E50;
-    height: 60px;
-    position: fixed;
-    width: 100%;    
+/*Bloque Cuerpo*/
+main {
+  background-color: #34495E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*Contenedor de cabecera__logo; cabecera__buscador; cabecera__usaurio*/
-.cabecera{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 100%;
-
-    
-}
-/*codigo que comparten las 3 cajas de la cabecera, mencionados anteriormente*/
-.cabecera__caja{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+section {
+  width: 60%;
+  padding: 15px;
+  margin: 15px;
+  background-color: #1B2631;
+  border-radius: 5px;
 }
 
-.cabecera__logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-/*Inicio-Logo de la cabecera*/
-.cabecera__logo a{
-    text-decoration: none;
-
+html {
+  scroll-behavior: smooth;
 }
 
-.cabecera__logo--text h1{
-    color:white;
-    font-size: 20px;
-
-    
+[id] {
+  scroll-margin-top: 300px;
 }
 
-.cabecera__logo--img{
-    height: fit-content;
-    width: fit-content;
-
-
+/*Seccion productos*/
+.Cabecera {
+  color: white;
+  padding: 5px;
 }
 
-.cabecera__logo--text{
-    height: fit-content;
-    width: fit-content;
-
-}
-/*Fin-Logo de la cabecera*/
-
-/*Inicio-Buscador de la cabecera*/
-.cabecera__buscador{
-   display: flex;
-
+.Cuerpo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.cabecera__buscador--input{
-    height: 40px;
-    width: 90%;
-
+.Cuerpo__subBox {
+  background-color: #F1C40F;
+  width: 920px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 }
 
-.cabecera__buscador--button{
-    height: 40px;
-    width: 40px;
+/*Cartas de SeccionProductos*/
+.Cuerpo__subBox--card {
+  display: flexbox;
+  width: 180px;
+  height: 240px;
+  box-shadow: 0 0 1px black;
+  background-color: white;
 }
 
-
-.cabecera__buscador--input input{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px 0 0 5px;
-    border:0;
-    padding: 0 5px;
-    outline: none;
-
+.Cuerpo__subBox--card a {
+  text-decoration: none;
 }
 
-.cabecera__buscador--button button{
-    width: 100%;
-    height: 100%;
-    background-color:#5DADE2 ;
-    border: 0;
-    border-radius: 0 5px 5px 0;
-    color: white;
-    cursor: pointer;
-
+.Cuerpo__subBox--cardImg img {
+  width: 100%;
+  height: 80%;
 }
 
-/*Efectos del buscador*/
-.cabecera__buscador button:hover{
-    background-color: #2874A6;
-
+.Cuerpo__subBox--cardImg {
+  background-color: white;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*Fin-Buscador de la cabecera*/
-
-
-/*Inicio-Login&Signin*/
-.cabecera__usuario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.Cuerpo__subBox--cardText {
+  background-color: white;
+  height: 20%;
+  width: 100%;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
 
-.cabecera__usuario--img{
-    height: fit-content;
-    width: fit-content;
-
+.Cuerpo__subBox--cardFont {
+  font-weight: 600;
+  font-size: 17px;
 }
 
-.cabecera__usuario--text{
-    height: fit-content;
-    width: fit-content;
-
+.Cuerpo__subBox--cardFont p {
+  color: #212F3D;
+  text-align: center;
 }
 
-.cabecera__usuario--text {
-    display: inline-block;        
-
+/*Efectos de SeccionProductos*/
+.Cuerpo__subBox--card:hover {
+  box-shadow: 0 0 5px 5px orange;
+  transition: all 0.2s;
 }
 
-.cabecera__usuario--text a{
-    text-decoration: none;
-    color: white;
-    margin: 5px;
-
-}
-/*Efectos*/
-.cabecera__usuario--text a:hover{
-    color:orange;
-    transition: all .3s;
+/*Bloque Pie de pagina*/
+footer {
+  background-color: #17202A;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-/*Fin-Login&Signin*/
-
-/*Inicio-Menu de navegacion*/
-.menu{	
-    background-color: #F39C12;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-} 
-
-
-.menu li{
-    display: inline-block;
-    margin: 4px;
-    
-    
+footer a {
+  text-decoration: none;
+  color: #ABB2B9;
+  margin: 10px;
 }
 
-.menu li a{
-    text-decoration:none;
-    color:white;
-    display: block;
-    
+/*Efectos pie de pagina*/
+footer a:hover {
+  color: orange;
+  transition: all 0.3s;
 }
 
-/*SubMenu de navegacion*/
-.menu__subMenu li{ 
- display: block;
-}
-
-.menu__subMenu{
-    position: absolute;
+/*Media queries*/
+@media (max-width: 480px) {
+  /*Ocultar Logo*/
+  .cabecera__logo--text {
     display: none;
-    list-style: none;
-    background-color: #283747;
-    
-    
+  }
+  /*Ocultar usuario*/
+  .cabecera__usuario--text {
+    display: none;
+  }
+  .cabecera {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .menu_imgChevronDown img {
+    display: none;
+  }
 }
 
-/*Efectos*/
-.menu li:hover .menu__subMenu{
-    display: block;
-
-}
-
-.menu li a:hover{
-    color:#566573;
-    transition: all .3s;
-
-}
-.menu__subMenu li a:hover{
-    color: orange;
-   } 
-
-
-/*Fin-Menu de navegacion*/   
-
-
-
-/*Inicio-Pie de pagina*/
-footer{
-    height: 100px;
-    width: 100%;
-    background-color: #17202A;
-    text-align: center;
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-
-}
-
-footer a{
-    text-decoration: none;
-    color: #ABB2B9;
-    margin: 10px;
-
-}
-
-/*Efectos*/
-footer a:hover{
-    color:orange;
-    transition: all .3s;
-
-}
-/*Fin-Pie de pagina*/
-
- /*Media queries*/ 
-     @media(max-width: 480px){
-     /*Cabecera*/   
-        /*OCultar Logo*/
-        .cabecera__logo--text{
-            display: none;
-
-        }
-
-        /*Ocultar usuario*/
-        .cabecera__usuario--text{
-            display: none;
-
-        }
-
-
-        .cabecera{
-            grid-template-columns: 1fr 3fr 1fr;
-
-        }
-
-        .menu_imgChevronDown img{
-           display: none;
-
-        }
-     }
-
-    
-
-
- 
-
+/*# sourceMappingURL=search.css.map */

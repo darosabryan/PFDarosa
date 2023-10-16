@@ -1,0 +1,24 @@
+ /*Bloque Pie de pagina*/
+ footer{
+    background-color: #17202A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: #ABB2B9;
+    margin: 10px;
+
+}
+
+/*Efectos pie de pagina*/
+footer a:hover{
+    color:orange;
+    transition: all .3s;
+
+}

@@ -1,0 +1,223 @@
+
+ /*Bloque Cuerpo*/
+main{
+    background-color: #34495E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section{
+        width: 60%;
+        padding: 15px;
+    }
+    
+    /*Seccion categoria*/
+    .categorias{
+        box-shadow: 0 0 3px white;
+        border-radius: 5px;
+        background-color: #1B2631 ;
+        margin: 15px;
+        overflow: hidden;
+
+        h3{
+            color: white;
+        
+        }
+
+        .categorias__cabecera{
+            padding: 5px;
+        
+        }
+        
+        .categorias__cuerpo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .Boxsubcategorias__cuerpo{
+                width: 625px;
+                display: grid;
+                gap:5px;
+                grid-template-columns: repeat(auto-fill,minmax(6rem,1fr));
+            
+                /*Cartas de SeccionCategoria*/
+                .categorias__cuerpo--card{
+                    display: flexbox;
+                    width: 100px;
+                    height: 120px;
+                    box-shadow: 0 0 1px black;
+                    border-radius: 5px;
+                    background-color: white;
+
+                    a{
+                        text-decoration: none;
+                    
+                    }
+
+                    .categorias__cuerpo--cardImg{
+                        background-color: white;
+                        height: 70%;
+                        width: 100%;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                    }
+
+                    .categorias__cuerpo--cardText{
+                        background-color: white;
+                        height: 30%;
+                        width: 100%;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;  
+                        
+                        p{
+                            color: #18222D;
+                            text-align: center;
+                        
+                        }
+                        
+                    }
+                    
+                    /*Efectos de categoria*/
+                    &:hover{
+                        box-shadow:  5px 5px 5px 5px orange;
+                        transition: all .3s;
+                    
+                    }
+                    
+
+                }
+            
+            }
+        
+        }
+        
+
+    }
+
+    /*Seccion productos*/
+    .productos{
+        margin: 15px;
+        overflow: hidden;
+
+
+        .productos__cabecera{
+            color: white;
+            padding: 5px;
+        
+        }
+
+        .productos__cuerpo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .Boxsubproductos__cuerpo{
+                background-color: #F1C40F;
+                width: 920px;
+                display: grid;
+                gap:5px;
+                grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
+                
+                /*Cartas de SeccionProductos*/
+                .productos__cuerpo--card{
+                    display:flexbox;
+                    width: 180px;
+                    height: 240px;
+                    box-shadow: 0 0 1px black;
+                    background-color: white;
+
+                    .productos__cuerpo--cardImg {
+                        background-color: white;
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img{
+                        width: 100%;
+                        height: 80%;
+                    
+                        }
+                    } 
+                    
+                    .productos__cuerpo--cardText{
+                        background-color: white;
+                        height: 20%;
+                        width: 100%;
+                        display: flexbox;
+                        justify-content: center;
+                        align-items: center;
+
+                        p{
+                            color: #212F3D;
+                            text-align: center;
+                        
+                        }
+                    
+                    }
+
+                    .productos__cuerpo--cardTextFont{
+                        font-weight:600;
+                        font-size: 17px;
+                    
+                    }
+
+                    /*Efectos de SeccionProductos*/
+                    &:hover{
+                        box-shadow: 0 0 5px 5px orange;
+                        transition: all .2s;
+                
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                
+                }
+
+                
+                
+            }
+        
+        }
+    }   
+
+
+    /*Seccion Acerca de nosotros*/
+    .aboutus{
+        text-align: center;
+        margin: 15px;
+        overflow: hidden;
+        padding:50px;
+        color: white;
+
+        .aboutus__titulo {
+            overflow: hidden;
+
+            h4{
+                font-size: 32px;
+                padding: 15px;
+            }
+        
+        }
+
+        .aboutus__text {
+            p{
+                margin: 20px;
+            }
+        
+        }
+
+    }
+}
+
+
+
+ 
+

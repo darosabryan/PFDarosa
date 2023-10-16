@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="shortcut icon" href="img/favIcon.png">
 </head>
-<body>
-    <header>
+<body id="home">
+    <header >
         <div class="cabecera">
 
             <!--Inicio-Caja Logo-->
@@ -25,8 +25,10 @@
             <!--Inicio-Barra de busqueda-->
             <div class="cabecera__caja cabecera__buscador">
                 <div class="cabecera__buscador--input"><input type="text" placeholder="buscar.."></div>
-                <div class="cabecera__buscador--button"><button>
-                    <a href="search.html"><img src="img/lupa.png" alt="lupa"></a>    
+                <div class="cabecera__buscador--button">
+                    <button type="submit">
+                    <a href="search.html"><img src="img/lupa.png" alt="lupa"></a>  
+                    </button>  
                 </div>
             </div>
             <!--Fin-Barra de busqueda-->
@@ -55,12 +57,12 @@
                     <a href="#">Categorías</a>
     
                     <ul class="menu__subMenu">
-                       <li><a href="search.html">Celulares</a></li>
-                       <li><a href="search.html">Computación</a></li>
-                       <li><a href="search.html">Cámaras</a></li>
-                       <li><a href="search.html">Electrónica</a></li>
-                       <li><a href="search.html">Audio&Video</a></li>
-                       <li><a href="search.html">Consolas</a></li> 
+                       <li><a href="search.html#celulares">Celulares</a></li>
+                       <li><a href="search.html#computacion">Computación</a></li>
+                       <li><a href="search.html#camaras">Cámaras</a></li>
+                       <li><a href="search.html#electronica">Electrónica</a></li>
+                       <li><a href="search.html#audioVideo">Audio&Video</a></li>
+                       <li><a href="search.html#consolas">Consolas</a></li> 
                     </ul>
                 
                 </li>                     
@@ -73,7 +75,7 @@
 
     </header>
 
-    <main>
+    <main >
         <Section class="categorias">
             
             <!--Inicio-Seccion de categorias-->
@@ -90,7 +92,7 @@
                     <div class="Boxsubcategorias__cuerpo"> 
                     <!--Carta Celulares-->
                         <div class="categorias__cuerpo--card">
-                            <a href="search.html">
+                            <a href="search.html#celulares">
                                 <div class="categorias__cuerpo--cardImg">
                                     <img src="img/phone.png" alt="phone">
                                 </div>
@@ -102,7 +104,7 @@
 
                         <!--Carta Computacion-->
                         <div class="categorias__cuerpo--card">
-                            <a href="search.html">
+                            <a href="search.html#computacion">
                                 <div class="categorias__cuerpo--cardImg">
                                     <img src="img/ordenador.png" alt="ordenador">
                                 </div>
@@ -114,7 +116,7 @@
 
                         <!--Carta Camara-->
                         <div class="categorias__cuerpo--card">
-                            <a href="search.html">
+                            <a href="search.html#camaras">
                                 <div class="categorias__cuerpo--cardImg">
                                     <img src="img/camara.png" alt="camara">
                                 </div>
@@ -126,7 +128,7 @@
 
                         <!--Carta Electronica-->
                         <div class="categorias__cuerpo--card">
-                            <a href="search.html">
+                            <a href="search.html#electronica">
                                 <div class="categorias__cuerpo--cardImg">
                                     <img src="img/upc.png" alt="upc">
                                 </div>
@@ -138,7 +140,7 @@
 
                         <!--Carta Audio&Video-->
                         <div class="categorias__cuerpo--card">
-                            <a href="search.html">
+                            <a href="search.html#audioVideo">
                                 <div class="categorias__cuerpo--cardImg">
                                     <img src="img/multimedia.png" alt="multimedia">
                                 </div>
@@ -150,7 +152,7 @@
 
                         <!--Carta Consolas-->
                         <div class="categorias__cuerpo--card">
-                            <a href="search.html">
+                            <a href="search.html#consolas">
                                 <div class="categorias__cuerpo--cardImg">
                                     <img src="img/consola.png" alt="consola">
                                 </div>
@@ -177,7 +179,7 @@
             <div class="productos__cuerpo">
                 <div class="Boxsubproductos__cuerpo"> 
                     <div class="productos__cuerpo--card">
-                        <a href="productView.html"></a>
+                        <a href="productView.html#pantallaCurva">
                             <div class="productos__cuerpo--cardImg">
                                 <img src="img/productos/pantallaCurva.webp" alt="pantallaCurva">
                             </div>
@@ -189,7 +191,7 @@
                     </div>
                 
                     <div class="productos__cuerpo--card">
-                        <a href="productView.html">
+                        <a href="productView.html#camaraLogi">
                             <div class="productos__cuerpo--cardImg">
                                 <img src="img//productos/camaraLogi.webp" alt="CamaraLogi">
                             </div>
@@ -200,7 +202,7 @@
                         </a>
                     </div>
                     <div class="productos__cuerpo--card">
-                        <a href="productView.html">
+                        <a href="productView.html#impresoraEpson">
                             <div class="productos__cuerpo--cardImg">
                                 <img src="img/productos/ImpresoraEpson.webp" alt="Impresora">
                             </div>
@@ -211,7 +213,7 @@
                         </a>
                     </div>
                     <div class="productos__cuerpo--card">
-                        <a href="productView.html">
+                        <a href="productView.html#parlanteJBL">
                             <div class="productos__cuerpo--cardImg">
                                 <img src="img/productos/ParlanteJBL.webp" alt="ParlanteJBL">
                             </div>
@@ -222,7 +224,7 @@
                         </a>
                     </div>
                     <div class="productos__cuerpo--card">
-                        <a href="productView.html">
+                        <a href="productView.html#sonyPlayStation5">
                             <div class="productos__cuerpo--cardImg">
                                 <img src="img/productos/SonyPlayStation5.webp" alt="SonyPlayStation5">
                             </div>
@@ -234,7 +236,7 @@
                     </div>
             
                     <div class="productos__cuerpo--card">
-                        <a href="productView.html">
+                        <a href="productView.html#iPhone14">
                             <div class="productos__cuerpo--cardImg">
                                 <img src="img/productos/AppleiPhone14.webp" alt="iPhone14">
                             </div>
@@ -245,7 +247,7 @@
                         </a>
                     </div>
                     <div class="productos__cuerpo--card">
-                        <a href="productView.html">
+                        <a href="productView.html#discoDuro">
                             <div class="productos__cuerpo--cardImg">
                                 <img src="img/productos/DiscoDuroExternoToshiba.webp" alt="DiscoDuro">
                             </div>
@@ -256,7 +258,7 @@
                         </a>
                     </div>
                     <div class="productos__cuerpo--card">
-                        <a href="productView.html">
+                        <a href="productView.html#tarjetaVideo">
                             <div class="productos__cuerpo--cardImg">
                                 <img src="img/productos/PlacaVideo.webp" alt="TarjetaVideo">
                             </div>
@@ -267,7 +269,7 @@
                         </a>
                     </div>
                     <div class="productos__cuerpo--card">
-                        <a href="productView.html">
+                        <a href="productView.html#microfonoHyperx">
                             <div class="productos__cuerpo--cardImg">
                                 <img src="img/productos/MicrófonoHyperX.webp" alt="MicrofonoHyperx">
                             </div>

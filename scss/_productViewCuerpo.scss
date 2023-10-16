@@ -1,0 +1,135 @@
+$colorFondo: white;
+$colorBoton: #F1C40F;
+$colorBorder: #929292;
+
+main{
+    background-color: #34495E;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.contenedor{
+    background-color: $colorFondo;
+    height: 520px;
+    width: 1020px;
+    border-radius: 5px;
+    border: 2px solid $colorBoton;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+[id]{
+    scroll-margin-top: 300px;
+
+}
+
+.imagenProducto{
+    background-color: $colorFondo;
+    height: 500px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.infoCompra{
+    background-color: $colorFondo;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 30%;
+    border: 1px solid $colorBorder;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.infoCompra__desProducto{
+    background-color: white;
+    height: 90%;
+    width: 100%;
+    border-radius:5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.infoCompra__desProducto--basico{
+    width: 100%;
+    height: 20%;
+
+}
+
+#infoCompra__desProducto--Nombre{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+    color: rgb(65, 63, 63);
+
+}
+
+#infoCompra__desProducto--precio{
+    font-size: 26px;   
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin: 15px;
+   
+}
+
+.infoCompra__desProducto--avanzado{
+    background-color: #2E4053;
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+
+
+}
+
+.infoCompra__desProducto--avanzado p{   
+    font-size: 14px;
+    color: white;
+
+
+}
+
+.infoCompra__comprarProducto{
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    border-radius:0 0 5px 5px;
+
+}
+
+.infoCompra__comprarProducto button{
+    width: 100%;
+    height: 100%;
+    background-color: $colorBoton ;
+    border: 0;
+    border-radius: 0 0 5px 5px;
+    color: white;
+    cursor: pointer;
+
+}
+ 
+.infoCompra__comprarProducto button:hover{
+    background-color: #fad541;
+
+}
+
+

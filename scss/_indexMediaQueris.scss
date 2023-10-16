@@ -1,0 +1,24 @@
+  /*Media queries*/ 
+  @media(max-width: 480px){  
+    /*Ocultar Logo*/
+    .cabecera__logo--text{
+        display: none;
+
+    }
+
+    /*Ocultar usuario*/
+    .cabecera__usuario--text{
+        display: none;
+
+    }
+
+    .cabecera{
+        grid-template-columns: 1fr 3fr 1fr;
+
+    }
+
+    .menu_imgChevronDown img{
+        display: none;
+
+    }
+}

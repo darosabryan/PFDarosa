@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/assets/logo-vt.svg" />
+    <link rel="shortcut icon" href="img/favIcon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electronic Store</title>
@@ -49,8 +49,7 @@
 
     <!--Formulario-->
     <main class=" d-flex justify-content-center align-items-center vh-100">
-      <form action="">
-        <div
+        <form
           class="bg-white p-5 rounded-5 text-secondary shadow"
           style="width: 25rem"
         >
@@ -77,6 +76,7 @@
               class="form-control bg-light"
               type="text"
               placeholder="Usuario"
+              required
             />
           </div>
 
@@ -93,6 +93,7 @@
               class="form-control bg-light"
               type="password"
               placeholder="contraseña"
+              required
             />
           </div>
 
@@ -117,9 +118,9 @@
           </div>
 
           <!--Boton continuar-->
-          <div class="btn btn-warning text-white w-100 mt-4 fw-semibold shadow-sm" type="button">
+          <button type="submit" class="btn btn-warning text-white w-100 mt-4 fw-semibold shadow-sm">
             continuar
-          </div>
+          </button>
 
           <!--Link hacia crear cuenta-->
           <div class="d-flex gap-1 justify-content-center mt-1">
@@ -130,8 +131,8 @@
           </div>
         
         
-        </div>
-      </form>   
+        </form>
+      
     </main>
   </body>
 </html>
