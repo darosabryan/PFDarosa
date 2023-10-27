@@ -176,7 +176,7 @@ main .categorias {
   margin: 15px;
   overflow: hidden;
 }
-main .categorias h3 {
+main .categorias h2 {
   color: white;
 }
 main .categorias .categorias__cabecera {

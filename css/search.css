@@ -208,6 +208,7 @@ main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card .Cuerpo__subBox--cardImg {
 main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card .Cuerpo__subBox--cardImg img {
   width: 100%;
   height: 80%;
+  object-fit: contain;
 }
 main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card .Cuerpo__subBox--cardText {
   background-color: white;
