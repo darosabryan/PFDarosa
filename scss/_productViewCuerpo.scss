@@ -3,23 +3,24 @@ $colorBoton: #F1C40F;
 $colorBorder: #929292;
 
 main{
+    width: 100%;
     background-color: #34495E;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 100px;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 50px 0;
 
     .contenedor{
         background-color: $colorFondo;
         height: 520px;
-        width: 1020px;
+        width: 90%;
         border-radius: 5px;
         border: 2px solid $colorBoton;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     
@@ -30,6 +31,11 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
+
+            img{
+                object-fit: contain;
+
+            }
         
         }
 

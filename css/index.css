@@ -259,6 +259,7 @@ main .productos .productos__cuerpo .Boxsubproductos__cuerpo .productos__cuerpo--
   height: 240px;
   box-shadow: 0 0 1px black;
   background-color: white;
+  overflow: hidden;
   /*Efectos de SeccionProductos*/
 }
 main .productos .productos__cuerpo .Boxsubproductos__cuerpo .productos__cuerpo--card .productos__cuerpo--cardImg {
@@ -272,6 +273,7 @@ main .productos .productos__cuerpo .Boxsubproductos__cuerpo .productos__cuerpo--
 main .productos .productos__cuerpo .Boxsubproductos__cuerpo .productos__cuerpo--card .productos__cuerpo--cardImg img {
   width: 100%;
   height: 80%;
+  object-fit: contain;
 }
 main .productos .productos__cuerpo .Boxsubproductos__cuerpo .productos__cuerpo--card .productos__cuerpo--cardText {
   background-color: white;
