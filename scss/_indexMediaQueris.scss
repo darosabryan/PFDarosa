@@ -1,24 +1,33 @@
   /*Media queries*/ 
   @media(max-width: 480px){  
-    /*Ocultar Logo*/
-    .cabecera__logo--text{
-        display: none;
-
-    }
-
-    /*Ocultar usuario*/
-    .cabecera__usuario--text{
-        display: none;
-
-    }
 
     .cabecera{
         grid-template-columns: 1fr 3fr 1fr;
+        /*Ocultar Logo*/
+        .cabecera__logo--text{
+            display: none;
 
+        }
+
+        /*Ocultar usuario*/
+            .cabecera__usuario--text{
+                width: 50%;
+                justify-content: center;
+                align-items: center;
+
+
+
+            }
+            .cabecera__usuario--img{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
     }
 
-    .menu_imgChevronDown img{
-        display: none;
 
-    }
+
+
 }
