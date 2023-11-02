@@ -308,9 +308,10 @@ main .aboutus {
 main .aboutus .aboutus__titulo {
   overflow: hidden;
 }
-main .aboutus .aboutus__titulo h4 {
+main .aboutus .aboutus__titulo h2 {
   font-size: 32px;
   padding: 15px;
+  text-align: center;
 }
 main .aboutus .aboutus__text p {
   margin: 20px;

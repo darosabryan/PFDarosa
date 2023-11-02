@@ -179,7 +179,7 @@ main .Cuerpo {
   justify-content: center;
 }
 main .Cuerpo .Cuerpo__subBox {
-  background-color: #F1C40F;
+  background-color: #1B2631;
   width: 920px;
   display: grid;
   gap: 5px;

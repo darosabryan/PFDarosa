@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Informenos acerca de sus dudas O problemas">
-    <meta name="keywords" content="contacto, telefono, correo, problemas, productos electrónicos">
+    <meta name="keywords" content="contacto, telefono, correo, email, ubicación, problemas, productos electrónicos">
     <title>Contactanos</title>
 
     <link rel="stylesheet" href="css/clientService.css"/>
@@ -61,7 +61,7 @@
             <ul class="menu" style="height: 27PX;">
                 <li><img src="img/ubi.png" alt="Ubicación Electronic Store | Productos en Ofertas"/></li>
                 <li>
-                    <a href="#">Ubicación</a>               
+                    <a href="ubicacion.html">Ubicación</a>               
                 </li>
                 <li>
                     <a href="#">Categorías</a>
@@ -86,7 +86,7 @@
     </header >
 
     <!--Formulario-->
-    <main style=" width: auto; display:inline-flex; justify-content: center; align-items: center;gap: 15px; padding:5px">
+    <main style=" width: auto; display:inline-flex; justify-content: center; align-items: center;column-gap: 50px; row-gap: 15px; padding:5px">
       <!--sección formulario-->
         <section class="bg-dark" style="width: 100%;display: flex; justify-content: center; align-items: center;" class="contactenosID">
           <form
@@ -118,28 +118,25 @@
               />
             </div>
 
-              <!--Campo telefono-->
-              <div class="input-group mt-1">
-                  <input
-                    class="form-control bg-light"
-                    type="number"
-                    placeholder="Telefono *"
-                    required
+            <!--Campo telefono-->
+            <div class="input-group mt-1">
+              <input
+                 class="form-control bg-light"
+                 type="number"
+                placeholder="Telefono *"                  
+                required
                   />
-                </div>
+            </div>
 
-                <div class="form-group"> 
-                  <textarea class="form-control bg-light" rows="5" id="comentarios" name="comentarios"
-                  placeholder="Mensaje *"
-                  required
-                  ></textarea>
-                </div> 
+            <div class="form-group"> 
+              <textarea class="form-control bg-light" rows="5" id="comentarios" name="comentarios"
+                placeholder="Mensaje *"
+                required
+                  >
+              </textarea>
+            </div> 
 
-            <div class="d-flex justify-content-around mt-1">
-            
-              
-            
-
+           
             <!--Boton continuar-->
             <button type="submit" class="btn btn-warning text-white w-100 mt-4 fw-semibold shadow-sm">
               Enviar
@@ -187,16 +184,10 @@
               </div>
               
             </div>
-            
-            
-
           </div>
-        </section>
-      
-      
+        </section>   
     </main>
     
-
     <!--Pie de pagina-->
     <footer>
         <a href="#home">Inicio</a>

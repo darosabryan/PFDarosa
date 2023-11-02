@@ -1,6 +1,7 @@
 $colorFondo: white;
-$colorBoton: #F1C40F;
-$colorBorder: #929292;
+$colorBoton: #F1C40F ;
+$colorBorder: white;
+
 
 main{
     width: 100%;
@@ -16,9 +17,9 @@ main{
     .contenedor{
         background-color: $colorFondo;
         height: 520px;
-        width: 90%;
+        width: 70%;
         border-radius: 5px;
-        border: 2px solid $colorBoton;
+        border: 2px solid $colorBorder;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -47,9 +48,10 @@ main{
             flex-direction: column;
             height: 500px;
             width: 30%;
-            border: 1px solid $colorBorder;
+            border: 1px solid #D5D8DC;
             border-radius: 5px;
             overflow: hidden;
+            text-align: center;
 
             .infoCompra__desProducto{
                 background-color: white;
@@ -62,14 +64,16 @@ main{
                 .infoCompra__desProducto--basico{
                     width: 100%;
                     height: 20%;
-                
+                   
                 }
                 
                 .infoCompra__desProducto--avanzado{
-                    background-color: #2E4053;
+                    background-color: #17202A ;
                     width: 100%;
                     height: 80%;
                     padding: 5px;
+                    
+                    
 
                     p{   
                         font-size: 14px;
@@ -126,14 +130,19 @@ html{
     font-weight: 600;
     margin: 15px;
     color: rgb(34, 28, 28);
+   
 
 }
 
 #infoCompra__desProducto--precio{
-    font-size: 26px;   
+    font-size: 20px;   
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    color: white;
     margin: 15px;
+    background-color: #52BE80;
+    border-radius:15px;
+
+    
    
 }
 
