@@ -16,38 +16,74 @@
     />
     <link rel="stylesheet" href="css/signIn.css">
   </head>
-  <body class="bg-dark">
-    <header>
-       <!--Cabecera--> 
-       <div class="cabecera">
+  <body class="bg-dark" id="home">
+    <header >
+      <!--Cabecera--> 
+      <div class="cabecera">
 
-        <!--Inicio-Caja Logo-->
-        <div class="cabecera__logo">
-            
-                <div class="cabecera__logo--img"><a href="index.html"><img src="img/favIcon.png" alt="LogoComputadora Electronic Store | Productos en Ofertas"/></a></div>
-                <div class="cabecera__logo--text"><a href="index.html"><h1>Electronic Store</h1></a></div>
-                
-        
-        </div>
-        <!--Fin-Caja Logo-->
+          <!--Inicio-Caja Logo-->
+          <div class="cabecera__logo">
+              
+                  <div class="cabecera__logo--img"><a href="index.html"><img src="img/favIcon.png" alt="LogoComputadora Electronic Store | Productos en Ofertas"/></a></div>
+                  <div class="cabecera__logo--text"><a href="index.html"><h1>MiTiendaElectronica.uy</h1></a></div>
+                  
+          
+          </div>
+          <!--Fin-Caja Logo-->
 
 
-        <!--Inicio-Barra de busqueda-->
-        <div class="cabecera__caja cabecera__buscador">
-         
-        </div>
-        <!--Fin-Barra de busqueda-->
+          <!--Inicio-Barra de busqueda-->
+          <div class="cabecera__caja cabecera__buscador">
+              <div class="cabecera__buscador--input"><input type="text" placeholder="buscar.."></div>
+              <div class="cabecera__buscador--button"><button >
+                  <a href="search.html"><img src="img/lupa.png" alt="lupa Electronic Store | Productos en Ofertas"></a>    
 
-        <!--Inicio-Caja usuario-->          
-        <div class="cabecera__caja cabecera__usuario">
-         
+              </div>
+          </div>
+          <!--Fin-Barra de busqueda-->
 
-        </div>
-    
+          <!--Inicio-Caja usuario-->          
+          <div class="cabecera__caja cabecera__usuario">
+                      
+              <div class="cabecera__usuario--img"><img src="img/user.png" alt="Usuario Electronic Store | Productos en Ofertas"/></div>
+              <div class="cabecera__usuario--text">
+                  <a href="signIn.html">Crear Cuenta</a>
+                  <a href="login.html">Ingresar</a>
+                                     
+              </div>    
+
+          </div>
+      
       </div>
+      
+      <nav class="bg-dark" style="height: 27px;">
+          <ul class="menu" >
+              <li><img src="img/ubi.png" alt="Ubicación Electronic Store | Productos en Ofertas"/></li>
+              <li>
+                  <a href="#">Ubicación</a>               
+              </li>
+              <li>
+                  <a href="#">Categorías</a>
 
-    
-    </header>
+                  <ul class="menu__subMenu" style="width: 200px; height: 200px;">
+                      <li><a href="search.html#celulares">Celulares</a></li>
+                      <li><a href="search.html#computacion">Computación</a></li>
+                      <li><a href="search.html#camaras">Cámaras</a></li>
+                      <li><a href="search.html#electronica">Electrónica</a></li>
+                      <li><a href="search.html#audioVideo">Audio&Video</a></li>
+                      <li><a href="search.html#consolas">Consolas</a></li>  
+                  </ul>
+              
+              </li>                     
+              <li class="menu_imgChevronDown"><img src="img/chevronDown.png" alt="flechaBaja Electronic Store | Productos en Ofertas"></li>                               
+              <li><a href="clientService.html">Servicio al cliente</a></li>
+                  
+          </ul>
+      </nav> 
+      <!--Fin-Barra de navegacion-->
+
+    </header >
+
     <main class=" d-flex justify-content-center align-items-center vh-100">
 
       <form
@@ -131,5 +167,11 @@
       
       </form>
     </main>
+    
+    <!--Pie de pagina-->
+    <footer>
+      <a href="#home">Inicio</a>
+      <a href="index.html#aboutUsID">Nosotros</a>
+    </footer>
   </body>
 </html>

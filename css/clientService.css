@@ -197,5 +197,14 @@ footer a:hover {
     align-items: center;
   }
 }
+@media (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main section {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=clientService.css.map */
