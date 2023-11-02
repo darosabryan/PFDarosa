@@ -1,0 +1,19 @@
+main{
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2{
+        color: white;
+
+    }
+    iframe{
+        width: 80%;
+        height: 500px;
+
+    }
+
+}

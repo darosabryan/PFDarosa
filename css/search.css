@@ -192,6 +192,7 @@ main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card {
   height: 240px;
   box-shadow: 0 0 1px black;
   background-color: white;
+  text-align: center;
   /*Efectos de SeccionProductos*/
 }
 main .Cuerpo .Cuerpo__subBox .Cuerpo__subBox--card a {

@@ -155,6 +155,22 @@ header .menu__subMenu li a:hover {
   color: orange;
 }
 
+main {
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main h2 {
+  color: white;
+}
+main iframe {
+  width: 80%;
+  height: 500px;
+}
+
 /*Bloque Pie de pagina*/
 footer {
   background-color: #17202A;
