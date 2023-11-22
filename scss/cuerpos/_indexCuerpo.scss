@@ -1,14 +1,15 @@
 
  /*Bloque Cuerpo*/
-main{
+ .Index_Main{
     background-color: #34495E;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     section{
-        width: 60%;
+        width: 50%;
         padding: 15px;
+        
     }
     
     /*Seccion categoria*/
@@ -19,13 +20,11 @@ main{
         margin: 15px;
         overflow: hidden;
 
-        h2{
-            color: white;
-        
-        }
 
         .categorias__cabecera{
+            color: white;
             padding: 5px;
+            text-align: left;
         
         }
         
@@ -108,6 +107,9 @@ main{
         .productos__cabecera{
             color: white;
             padding: 5px;
+            text-align: left;
+    
+            
         
         }
 
